@@ -26,6 +26,7 @@ BigInteger prevToken = new BigInteger(0)
         }
         if (parsed[3] != 'Up' || parsed[4] != 'Normal') {
             println("Ring is not in All Up/Normal state: ${parsed[0]} is in ${parsed[3]}/${parsed[4]}")
+            System.exit(4);
         }
         BigInteger token = new BigInteger(parsed[8])
         lines << new Line(address: parsed[0], token: token, range: token - prevToken)

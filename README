@@ -1,0 +1,5 @@
+This is small utility to balance cassandra cluster. It uses nodetool, so you need to have it available in path. At the same time, it needs no special classpath.
+It takes single argument - host name of any node in your cluster. 
+Cluster should be all up and in normal state, other wise tool will exit with non-0 exit code.
+At single run it will balance single node.
+
